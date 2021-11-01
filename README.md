@@ -24,7 +24,7 @@ You need to add below dependencies for auto generate proto classes.
 ````
 
 * Dependencies
-* 
+
 ````xml
 <dependencies>
     <dependency>
@@ -224,7 +224,7 @@ With `ddl-auto: create` property no need to create log table. Hibernate automati
 ![Application Started](/assets/grpc_started.jpg)
 
 
-# Application Send Request
+# Application Get Requests
 
 You can try application with [BloomRPC](https://github.com/uw-labs/bloomrpc).
 
