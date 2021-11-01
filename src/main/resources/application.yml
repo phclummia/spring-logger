@@ -1,0 +1,15 @@
+server:
+  port: 9998
+grpc:
+  server:
+    port: 9999
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/logger-database
+    username: root
+    password: pass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      #creates repository at target database when application started
+      ddl-auto: create

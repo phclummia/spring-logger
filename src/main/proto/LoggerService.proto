@@ -1,0 +1,19 @@
+syntax = "proto3";
+package com.workshop.springlogger;
+
+option java_multiple_files = true;
+option java_package = "com.workshop.springlogger.proto";
+option java_outer_classname = "LoggerServiceProto";
+
+message LogRequest {
+    string message = 1;
+    string applicationName = 2;
+    string level = 3;
+}
+message LogResponse {
+    bool success = 1;
+    string responseMessage = 2;
+}
+service LoggerService {
+    rpc log(LogRequest) returns (LogResponse);
+}
