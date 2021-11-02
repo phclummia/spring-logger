@@ -211,6 +211,8 @@ spring:
 After creating database `logger-database` you can install and run application.
 With `ddl-auto: create` property no need to create log table. Hibernate automatically creates table(s).
 
+![JPA ddl-auto values](/assets/jpa_ddl_update.jpg)
+
 * First Install Application 
 ```shell
 ./mvnw clean install
